@@ -7,7 +7,8 @@
     "build": "tsc",
     "clean": "rm -rf build/",
     "prebuild": "npm run clean",
-    "postbuild": "chmod +x build/index.js"
+    "postbuild": "chmod +x build/index.js",
+    "prepare": "npm run build"
   },
   "bin": {
     "mcp-miro": "build/index.js"
